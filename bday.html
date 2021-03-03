@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Hi there!</title>
+ <meta charset="utf-8" />
+ <style>
+ 	body {
+ 		text-align: center;
+    background-image: url("bg1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 	}
+
+ 	h1 {
+ 		color: red;
+ 		font-size: 50px;
+ 		border: 3px solid black;
+ 		background-color: yellow;
+ 		text-shadow: 2.2px 2.2px black;
+ 		font-style: italic;
+    opacity: 0.75;
+ 	}
+
+ 	p {
+    padding-top: 5%;
+ 		font-size: 20px;
+ 	}
+
+ 	#main {
+ 		font-size: 30%;
+ 		font-style: italic;
+ 		margin-top: 3.7%;
+ 	}
+
+ 	#pin {
+ 		font-size: 825%;
+    color: white;
+ 	}
+
+ 	button {
+		color: white;
+ 		word-wrap: normal;
+ 		background-color: green;
+ 		box-sizing: border-box;
+ 		padding-right: 10%;
+    opacity: 0.7;
+ 	}
+ </style>
+</head>
+
+<body id="bc">
+	<h1>Welcome Mr. X</h1>
+	<p id="p">Are Your Ready?</p>
+	<div id="main">
+		<p id="pin">Is it your Birthday today ?</p>
+		<div>
+			<button id="b1" onclick="change()">YESSSSSSS</button>
+			<button id="b2" onclick="change()">Super YES</button>
+		</div>
+	</div>
+
+<script>
+  function change() {
+    var x = document.getElementById("bc");
+    x.style.backgroundImage = "url(bg2.jpeg)";
+    x = document.getElementById("pin");
+    if (x.innerHTML == "Is it your Birthday today ?") {
+      x.innerHTML = "Happy Birthday Mr. Chakrawarty!";
+    }
+    x.style.color = "red";
+    x.style.marginTop = "10.8%";
+    x = document.getElementById("b1");
+    x.style.opacity = "0.0";
+    x = document.getElementById("b2");
+    x.style.opacity = "0.0";
+    x = document.getElementById("p");
+    x.style.opacity = "0.0";
+  }
+</script>
+
+</body>
+</html>
